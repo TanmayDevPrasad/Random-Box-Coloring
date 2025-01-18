@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Coloring using DOM methods</title>
+    <style>
+        .box {
+            height: 90px;
+            width: 90px;
+            border: 2px solid black;
+            display: grid;
+            place-items: center;
+            font-weight: bolder;
+            font-size: xx-large;
+            font-family: sans-serif;
+            color: rgb(0, 0, 0);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+        .message{
+            border: 2px solid red;
+            margin-top: 50px;
+            display: grid;
+            place-items: center;
+            padding: 20px 0px;
+        }
+        #btn{
+            padding: 10px;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">BOX1</div>
+        <div class="box" id="box2">BOX2</div>
+        <div class="box" id="box3">BOX3</div>
+        <div class="box" id="box4">BOX4</div>
+        <div class="box" id="box5">BOX5</div>
+    </div>
+
+    <div class="message">
+        <button id="btn">Change colour</button>
+    </div>
+    <script src="exercise12.js"></script>
+</body>
+</html>
